@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #264653;
+  height: 5vh;
+}
+
+.brand-title {
+  color: #e76f51;
+}
