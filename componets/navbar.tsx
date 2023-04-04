@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav>
       <div className='brand-title'>
-        Upcoming Media
+        Upcoming Games
       </div>
     </nav>
   )
