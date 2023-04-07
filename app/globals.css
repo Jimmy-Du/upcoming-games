@@ -2,6 +2,7 @@ body {
   font-family: sans-serif;
   text-align: center;
   margin: 0%;
+  background-color: #2a9d8f;
 }
 
 nav {
@@ -10,8 +11,142 @@ nav {
   justify-content: center;
   background-color: #264653;
   height: 5vh;
+  font-size: 1.2em;
 }
 
 .brand-title {
   color: #e76f51;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upcoming-content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: calc(100% - 10px);
+  margin: 10px 0px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 2px #656d78;
+  background-color: white;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid;
+  padding: 10px;
+  width: 15%;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+
+  padding: 10px;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game-title {
+  text-align: left;
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 5px;
+}
+
+.game-website {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+
+  grid-row: 1 / 3;
+}
+
+.game-website a {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.platform-info {
+  float: left;
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  white-space: nowrap;
+  align-content: center;
+  margin: 5px 10px 0 0;
+  padding: 3px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 0 1px 1px #656d78;
+}
+
+.platform-info:hover {
+  text-decoration: underline;
+}
+
+.game-platforms {
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .upcoming-content {
+    width: 65%;
+  }
+
+  nav {
+    padding: 5px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .upcoming-content {
+    width: 50%;
+  }
+
+  .game-title, .date {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 2560px) {
+  .upcoming-content {
+    width: 40%;
+  }
+
+  nav {
+    font-size: 1.6em;
+    padding: 0;
+  }
+
+  .game-title, .date {
+    font-size: 1.4em;
+  }
+
+  .platform-info {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 3840px) {
+  nav {
+    font-size: 2em;
+  }
+
+  .game-title, .date {
+    font-size: 1.8em;
+  }
+
+  .platform-info {
+    font-size: 1.6em;
+  }
 }
