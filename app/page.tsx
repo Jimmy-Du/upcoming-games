@@ -9,7 +9,7 @@ import UpcomingContent from '@/componets/UpcomingContent'
 // Parameters:  N/A
 // Return:      the response containing all the upcoming games
 async function getGames() {
-  const res = await fetch('http://localhost:3000/api/games', { cache: 'no-store' })
+  const res = await fetch(process.env.baseURL + '/api/games', { cache: 'no-store' })
 
   return res.json()
 }
