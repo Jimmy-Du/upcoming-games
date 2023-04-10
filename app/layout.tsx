@@ -4,7 +4,7 @@ import Footer from '@/componets/footer'
 
 export const metadata = {
   title: 'Upcoming Media',
-  description: 'A calendar displaying upcoming noteworthy games and movies.',
+  description: 'A calendar displaying upcoming noteworthy games',
 }
 
 export default function RootLayout({
