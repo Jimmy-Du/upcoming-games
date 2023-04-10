@@ -1,5 +1,6 @@
 import './globals.css'
 import Navbar from '@/componets/navbar'
+import Footer from '@/componets/footer'
 
 export const metadata = {
   title: 'Upcoming Media',
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body>
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   )
