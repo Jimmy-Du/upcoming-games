@@ -27,7 +27,8 @@ export default async function Home() {
                     key={game._id.toString()}
                     _id={game._id}
                     title={game.title} 
-                    releaseDate={game.releaseDate} 
+                    releaseDate={game.releaseDate}
+                    image={game.image} 
                     website={game.website}
                     platforms={game.platforms} />
         })
