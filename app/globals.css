@@ -37,13 +37,22 @@ footer a {
 }
 
 .upcoming-content {
+  margin: 10px 0px;
+  box-shadow: 0 0 3px 2px #656d78;
+  width: calc(100% - 10px);
+  border-radius: 10px;
+}
+
+.game-image {
+  background-color: #264653;
+  border-radius: 10px 10px 0 0;
+}
+
+.game-info {
   display: flex;
   align-content: center;
   justify-content: center;
-  width: calc(100% - 10px);
-  margin: 10px 0px;
   border-radius: 10px;
-  box-shadow: 0 0 3px 2px #656d78;
   background-color: white;
 }
 
@@ -152,6 +161,10 @@ footer a {
 @media (min-width: 3840px) {
   nav, footer{
     font-size: 2em;
+  }
+
+  .upcoming-content {
+    width: 35%;
   }
 
   .game-title, .date {
