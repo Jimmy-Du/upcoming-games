@@ -6,6 +6,7 @@ interface Game extends WithId<Document> {
   title: string,
   releaseDate: string,
   website: string,
+  image: string,
   platforms: GamePlatform[]
 }
 
