@@ -4,20 +4,26 @@ import Game from '@/interfaces/game.interface'
 
 
 
-const UpcomingContent: React.FC<Game> = ({title, releaseDate, website, platforms}) => {
+const UpcomingContent: React.FC<Game> = ({title, releaseDate, website, image, platforms}) => {
   const formattedDate: Date = new Date(releaseDate)
 
   return (
     <div className='upcoming-content'>
-      <div className='date'>
-        <span>
-          { formattedDate.toLocaleString('default', { month: 'short' }) }
-        </span>
-        <span>
-          { formattedDate.toLocaleString('default', { day: '2-digit' }) }
-        </span>
-      </div>
-      <div className='game'>
+      { image ?
+      <div className='game-image'>
+        <img src={image}/>
+      </div> 
+      :null }
+      <div className='game-info'>
+        <div className='date'>
+          <span>
+            { formattedDate.toLocaleString('default', { month: 'short' }) }
+          </span>
+          <span>
+            { formattedDate.toLocaleString('default', { day: '2-digit' }) }
+          </span>
+        </div>
+        <div className='game'>
           <div className='game-title'>{title}</div>
           <div className='game-website'>
             <a href={website} target='_blank'>
@@ -35,6 +41,7 @@ const UpcomingContent: React.FC<Game> = ({title, releaseDate, website, platforms
             }
           </div>
         </div>
+      </div>
     </div>
   )
 }
