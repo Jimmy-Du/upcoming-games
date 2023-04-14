@@ -11,7 +11,7 @@ export async function GET(request: Request) {
   
   let games = await collection
     .find(
-      {'releaseDate' : {$gte : new Date()}}
+      {'releaseDate' : {$gte : new Date(new Date().getDate() - 30)}}
     )
     .sort({'releaseDate' : 1})
     .toArray() as Game[]
