@@ -29,10 +29,13 @@ footer a {
 }
 
 .container {
+  min-height: 90vh;
+}
+
+.content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 90vh;
 }
 
 .upcoming-content {
@@ -135,7 +138,7 @@ footer a {
 }
 
 @media (min-width: 810px) and (max-width: 811px), (min-width: 1080px) {
-  .container {
+  .content-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
