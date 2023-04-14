@@ -15,6 +15,7 @@ nav, footer {
   background-color: #264653;
   height: 5vh;
   font-size: 1.2em;
+  padding: 5px;
 }
 
 footer {
@@ -31,7 +32,6 @@ footer a {
 
 .container {
   display: flex;
-  flex: 1;
   flex-direction: column;
   align-items: center;
 }
@@ -39,12 +39,16 @@ footer a {
 .upcoming-content {
   margin: 10px 0px;
   box-shadow: 0 0 3px 2px #656d78;
-  width: calc(100% - 10px);
+  width: 90%;
   border-radius: 10px;
 }
 
 .game-image {
   background-color: #264653;
+  border-radius: 10px 10px 0 0;
+}
+
+.game-image img {
   border-radius: 10px 10px 0 0;
 }
 
@@ -54,6 +58,7 @@ footer a {
   justify-content: center;
   border-radius: 10px;
   background-color: white;
+  border-radius: 0 0 10px 10px;
 }
 
 .date {
@@ -61,7 +66,7 @@ footer a {
   flex-direction: column;
   justify-content: center;
   border-right: 1px solid;
-  padding: 10px;
+  padding: 5px;
   width: 15%;
 }
 
@@ -70,7 +75,7 @@ footer a {
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
 
-  padding: 10px;
+  padding: 5px;
   width: 100%;
 
   background-repeat: no-repeat;
@@ -81,7 +86,6 @@ footer a {
   text-align: left;
   grid-column: 1;
   grid-row: 1;
-  margin-bottom: 5px;
 }
 
 .game-website {
@@ -119,19 +123,40 @@ footer a {
   width: 100%;
 }
 
-@media (min-width: 800px) {
-  .upcoming-content {
-    width: 65%;
+@media (orientation: landscape) and (max-height: 500px) and (min-width: 750px) {
+  .game-image {
+    display: none;
   }
 
-  nav {
-    padding: 5px;
+  .game-info {
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 810px) and (max-width: 811px), (min-width: 1080px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .upcoming-content {
+    width: 30%;
+    margin: 10px;
+  }
+
+  .game-info {
+    min-height: 120px;
+  }
+
+  .game-image img {
+    width: 100%;
   }
 }
 
 @media (min-width: 1080px) {
   .upcoming-content {
-    width: 50%;
+    width: 20%;
   }
 
   .game-title, .date {
@@ -140,13 +165,14 @@ footer a {
 }
 
 @media (min-width: 2560px) {
-  .upcoming-content {
-    width: 40%;
-  }
-
   nav, footer {
     font-size: 1.6em;
     padding: 0;
+  }
+
+  .upcoming-content {
+    width: 15%;
+    margin: 20px;
   }
 
   .game-title, .date {
@@ -161,10 +187,6 @@ footer a {
 @media (min-width: 3840px) {
   nav, footer{
     font-size: 2em;
-  }
-
-  .upcoming-content {
-    width: 35%;
   }
 
   .game-title, .date {
