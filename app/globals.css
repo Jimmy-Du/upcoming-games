@@ -16,12 +16,9 @@ nav, footer {
   height: 5vh;
   font-size: 1.2em;
   padding: 5px;
+  border-top: 1px solid #c1c9d6;
   border-bottom: 1px solid #c1c9d6;
   color: #00b4d8;
-}
-
-footer {
-  border-top: 1px solid #c1c9d6;
 }
 
 footer a {
@@ -174,9 +171,23 @@ footer a {
     padding: 0;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-container {
+    width: 80%;
+  }
+
   .upcoming-content {
     width: 15%;
     margin: 20px;
+  }
+
+  .game-info {
+    min-height: 130px;
   }
 
   .game-title, .date {
@@ -191,6 +202,10 @@ footer a {
 @media (min-width: 3840px) {
   nav, footer{
     font-size: 2em;
+  }
+
+  .content-container {
+    width: 70%;
   }
 
   .game-title, .date {
