@@ -13,17 +13,27 @@ const GamePlatform: React.FC<IProps> = ({platform, website}) => {
   // holds the filename for the logo to displayed
   let logoFilename = 'pc.svg'
 
-  // if the platform is PS4 or PS5 the logo is set to the Playstation logo
-  if (platform == 'PS4' || platform == 'PS5') {
-    logoFilename = 'playstation.svg'
-  }
-  // if the platform is Series or One the logo is set to the Xbox logo
-  else if (platform == 'Series' || platform == 'One') {
-    logoFilename = 'xbox.svg'
-  }
-  // if the platform is Switch the logo is set to the Nintendo Switch logo
-  else if (platform == 'Switch') {
-    logoFilename = 'nintendo-switch.svg'
+  // switch case that matches the platform image to the platform name
+  switch (platform) {
+    case 'PS4':
+    case 'PS5':
+      logoFilename = 'playstation.svg'
+      break;
+    case 'One':
+    case 'Series':
+      logoFilename = 'xbox.svg'
+      break;
+    case 'Switch':
+      logoFilename = 'nintendo-switch.svg'
+      break;
+    case 'iOS':
+      logoFilename = 'ios.svg'
+      break;
+    case 'Android':
+      logoFilename = 'android.svg'
+      break;
+    default:
+      break;
   }
 
   return (
