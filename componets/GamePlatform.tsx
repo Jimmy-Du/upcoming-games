@@ -27,7 +27,7 @@ const GamePlatform: React.FC<IProps> = ({platform, website}) => {
       logoFilename = 'nintendo-switch.svg'
       break;
     case 'iOS':
-      logoFilename = 'ios.svg'
+      logoFilename = 'apple.svg'
       break;
     case 'Android':
       logoFilename = 'android.svg'
