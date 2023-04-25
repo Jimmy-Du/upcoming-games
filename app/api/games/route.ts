@@ -5,6 +5,8 @@ import Game from "@/interfaces/game.interface";
 
 
 export async function GET(request: Request) {
+  console.log(request.url)
+
   const client = await clientPromise
   const db = client.db('upcomingMedia')
   const collection = db.collection('games')
