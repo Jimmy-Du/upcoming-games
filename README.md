@@ -7,6 +7,7 @@
   ·
   <a href="https://github.com/Jimmy-Du/upcoming-games/issues">Request Feature</a>
 </div>
+<p align='center'>Allow a couple of minutes for the application to fully wake up.</p>
 
 ## About The Project:
 With the amount of video games coming out in modern times it can be very hard to keep of track all the notable ones, which is why I have created the Upcoming Games project. This is a web based application that displays recently released video games as well as ones that are coming soon. The games that will be displayed by this project will typically be games by well known publishers/developers and indie games that seem promising. 
