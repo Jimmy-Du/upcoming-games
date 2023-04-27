@@ -30,3 +30,6 @@ With the amount of video games coming out in modern times it can be very hard to
     <img src='https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white' alt='TypeScript'/>
   </li>
 </ul>
+
+## Showcase:
+![Website Showcase](./images/showcase.gif)
