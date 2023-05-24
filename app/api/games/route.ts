@@ -13,7 +13,7 @@ export async function GET(request: Request) {
   
   let games = await collection
     .find(
-      {'releaseDate' : {$gte : new Date(new Date().getDate() - 30)}}
+      {'releaseDate' : {$gte : new Date(new Date().getTime() - (30 * 24 * 60 * 60 * 1000))}}
     )
     .sort({'releaseDate' : 1})
     .toArray() as Game[]
